@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .b1{border: solid black;
+        height: 700px;
+        width: 600px;
+        text-align: center;
+        margin-left:450px; 
+        background-color: rgb(164, 159, 158);
+        color:cornsilk;
+    }
+       input{
+        background-color: rgb(182, 255, 109);
+       } 
+       h2{
+        color: white;
+       }
+   @media screen and (min-width:0px) and (max-width:375px)
+   {
+    h1{
+        color:brown
+    }
+   }
+</style>
+    <div class="b1">
+        <br>
+        <h2><u>Student Registration Form</u></h2><br>
+   
+     <form>
+        <lable for="fname">Name:</lable>
+        <input type="text" id="fname" name="fname"><br><br>
+
+        <label for="dob">Date of birth:</label>
+        <input type="date" id="dob" name="dob"><br><br>
+         
+        <lable for="email">Email address:</lable>
+        <input type="email" id="email" name="email"><br><br>
+
+        <lable for="ph">Phone number :</lable>       
+        <input type="text" id="pn" name="ph">
+    
+
+       
+        <br><br>
+        
+        <lable for="skills">select skills:</lable>
+        <input list="skills" name="skills"></td>
+
+        <datalist id="skills">
+            <option value="java">java</option>
+            <option value="css">css</option>
+            <option value="js">js</option>
+            <option value="angular">angular</option>
+
+        </datalist>
+    
+    <br><br>
+    
+    
+        <label for="clrs">fav colour:</label>
+        <select id="clrs" name="clrs">
+                        <option value="orange">orange</option>
+            <option value="yellow">yellow</option>
+            <option value="green">green</option>
+            <option value="purple">purple</option>
+            <option value="white">white</option>
+        </select><br><br>
+        <label for="file">Upload document:</label>
+        <input type="file" id="file" name="file" multiple><br><br>
+        <p>Blood Group:</p>
+                <input type="radio" id="bg" name="bg" value="a+">
+                <label for="bg">A+</label>
+        
+        <input type="radio" id="bg" name="bg" value="ab-">
+        <label for="bg">Ab-</label>
+        
+        <input type="radio" id="bg" name="bg" value="o+">
+        <label for="bg">O+</label>
+        <input type="radio" id="bg" name="bg" value="b+">
+        <label for="bg">b+</label><br><br>
+
+        <p>Educaton Qualification :</p>
+
+        <input type="checkbox" id="eq" name="eq" value="10th">
+        <label for="eq">10th</label><br>
+        <input type="checkbox" id="eq" name="eq" value="Inter">
+        <label for="eq">Inter</label><br>
+        <input type="checkbox" id="eq" name="eq" value="Dgree">
+        <label for="eq">Dgree</label><br>
+        <input type="checkbox" id="eq" name="eq" value="Btech">
+        <label for="eq">Btech</label><br>
+        <input type="checkbox" id="eq" name="eq" value="Mbbs">
+        <label for="eq">Mbbs</label><br><br>
+       
+        
+        <input type="submit">
+        <input type="reset">
+    </form>
+</div>
+</body>
+</html>
